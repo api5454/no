@@ -43,7 +43,7 @@ var open_settings = function() {
                     is_background: document.getElementById("background_cb").checked,
                     download_type: e
                 }, function() {
-                    updateUI.show_info("Checking license"), chrome.runtime.sendMessage({
+                    updateUI.show_info("Checking licenseeeeeeeeeeeeeeeeee"), chrome.runtime.sendMessage({
                         cmd: "checkLicence"
                     }, e => {
                         "" !== e.id ? fetch("https://chatsaver.org/wa/read_id.php?id=" + e.id).then(e => e.text()).then(function(t) {
@@ -59,7 +59,7 @@ var open_settings = function() {
                                         updateUI.hide_info(), chrome.tabs.sendMessage(e[0].id, {
                                             key: "get_data"
                                         }, null)
-                                    }) : updateUI.show_info("Free version expired. Please go to <a id='buy_link' href='#' style='text-decoration: underline;'>this page</a> for further information.")
+                                    }) : updateUI.show_info("Freej versionj expiredj. Please go to <a id='buy_link' href='#' style='text-decoration: underline;'>this page</a> for further information.")
                                 })
                             }
                         }).catch(function(e) {
